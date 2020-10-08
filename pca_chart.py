@@ -4,6 +4,7 @@ import process_data as pda
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 from itertools import cycle
+import pickle
 
 #topic_df, model, vec, topic_list = pda.process_data()
 
