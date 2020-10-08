@@ -16,7 +16,7 @@ def create_clusters():
     pca = PCA(n_components=2)
     topic_df = pd.read_csv('topic_df.csv')
     #topic_df = pd.read_pickle('topic_df.pkl')
-    X_train = topic_df.iloc[:, :-1]
+    X_train = topic_df.iloc[:, 1:-1]
     y_train = topic_df.iloc[:, -1]
     y_vals = y_train.unique()
     model = pca.fit(X_train)
