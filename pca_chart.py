@@ -14,8 +14,8 @@ import pickle5 as pickle
 def create_clusters():
     #topic_df, model, vec, topic_list = pda.process_data()
     pca = PCA(n_components=2)
-    #topic_df = pd.read_csv('topic_df.csv')
-    topic_df = pd.read_pickle('topic_df.pkl')
+    topic_df = pd.read_csv('topic_df.csv')
+    #topic_df = pd.read_pickle('topic_df.pkl')
     X_train = topic_df.iloc[:, :-1]
     y_train = topic_df.iloc[:, -1]
     y_vals = y_train.unique()
